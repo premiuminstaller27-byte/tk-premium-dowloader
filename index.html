@@ -1,36 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>TK Premium Downloader</title>
-  <style>
-    body {
-      background: #06100d;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding: 50px 10px;
-    }
-    h1 { color: #20ff55; }
-    button {
-      background: #20ff55;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TK Premium Downloader</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050914;
+  color: white;
+  text-align: center;
+}
+header {
+  padding: 35px 15px;
+  background: radial-gradient(circle, #123b75, #050914 70%);
+  border-bottom: 2px solid #00bfff;
+}
+.dragon {
+  font-size: 65px;
+  filter: drop-shadow(0 0 15px #00bfff);
+}
+.logo {
+  color: #00c8ff;
+  font-size: 48px;
+  margin: 5px;
+  text-shadow: 0 0 18px #0077ff;
+}
+h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+header p {
+  color: #b9dfff;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 15px;
+}
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.app {
+  background: #0d1729;
+  border: 1px solid #087bcb;
+  border-radius: 16px;
+  padding: 25px 15px;
+  box-shadow: 0 0 15px #00345b;
+}
+.app-icon {
+  font-size: 55px;
+}
+.app h2 {
+  color: #70dfff;
+}
+.app p {
+  color: #c0cbd9;
+}
+.download {
+  display: inline-block;
+  background: #00bfff;
+  color: #00101d;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.download:hover {
+  background: white;
+  box-shadow: 0 0 15px #00bfff;
+}
+footer {
+  padding: 25px;
+  color: #8196ad;
+}
+</style>
 </head>
+
 <body>
-  <h1>TK PREMIUM DOWNLOADER</h1>
-  <p>Your Apps. Your Downloads. One Place.</p>
-  <input placeholder="Search apps and games">
-  <button>Search</button>
-  <h2>Welcome!</h2>
-  <p>Discover Android apps and games.</p><div style="text-align:center; margin:30px;">
-  <a href="https://drive.google.com/file/d/1qzrpWtwCdl3QcmiRvw9jGBwCmvN9gYdS/view?usp=sharing"
-   target="_blank"
-   rel="noopener noreferrer">
-  Download My APK
-</a>
-</div>
+<header>
+  <div class="dragon">🐉</div>
+  <div class="logo">TK</div>
+  <h1>PREMIUM DOWNLOADER</h1>
+  <p>Your Android Apps, All in One Place</p>
+</header>
+
+<main class="container">
+  <h2>🔥 APP COLLECTION 🔥</h2>
+
+  <div class="apps">
+    <div class="app">
+      <div class="app-icon">🎬</div>
+      <h2>CapCut</h2>
+      <p>Video editing app</p>
+      <a class="download"
+         href="https://drive.google.com/file/d/1qzrpWtwCdl3QcmiRvw9jGBwCmvN9gYdS/view?usp=sharing"
+         target="_blank"
+         rel="noopener">
+         Download APK
+      </a>
+    </div>
+
+    <div class="app">
+      <div class="app-icon">📱</div>
+      <h2>Coming Soon</h2>
+      <p>More apps will be added soon!</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 TK Premium Downloader
+</footer>
 </body>
 </html>
